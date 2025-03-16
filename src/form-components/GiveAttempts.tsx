@@ -24,7 +24,7 @@ export function GiveAttempts(): React.JSX.Element {
                 <FormControl 
                 type="number"
                 value={requests}
-                onChange={(event: React.ChangeEvent<HTMLInputElement>) => setRequests(event.target.value)}
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {setRequests(event.target.value);}}
                 ></FormControl>
             </FormGroup>
             <Button onClick={gainAttempts}>gain</Button>
